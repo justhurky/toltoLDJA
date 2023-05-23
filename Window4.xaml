@@ -10,6 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="morning-dew.jpg"/>
         </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="44" Margin="233,10,0,0" VerticalAlignment="Top" Width="125" Source="logo.png"/>
 
     </Grid>
 </Window>

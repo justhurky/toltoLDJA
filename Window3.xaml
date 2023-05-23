@@ -11,14 +11,14 @@
             <ImageBrush ImageSource="/pexels-karolina-grabowska-4862863.jpg"/>
         </Grid.Background>
         <Image x:Name="image" HorizontalAlignment="Center" Height="52" Margin="0,10,0,0" VerticalAlignment="Top" Width="145" Source="/logo.png"/>
-        <Label x:Name="label" Content="Többet szeretne megtudni?&#x0a; Itt megtalálja a segítséget." HorizontalAlignment="Center" Margin="66,99,66,0" VerticalAlignment="Top" Background="#FFFF9900" Height="75" Width="275" FontSize="20" FontWeight="Bold">
+        <Label x:Name="label" Content="Többet szeretne megtudni?&#x0a; Itt megtalálja a segítséget." HorizontalAlignment="Center" Margin="64,130,68,0" VerticalAlignment="Top" Background="#FFFF9900" Height="75" Width="275" FontSize="20" FontWeight="Bold">
             <Label.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Label.Resources>
         </Label>
-        <Grid HorizontalAlignment="Left" Height="125" Margin="131,195,0,0" VerticalAlignment="Top" Width="147">
+        <Grid HorizontalAlignment="Left" Height="44" Margin="131,221,0,0" VerticalAlignment="Top" Width="147">
             <Button x:Name="tipus" Content="Töltő típusok" HorizontalAlignment="Left" Margin="53,0,0,0" VerticalAlignment="Top" Width="92" Background="#FFFF9900" FontWeight="Bold" Height="38">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">

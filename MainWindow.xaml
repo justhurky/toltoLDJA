@@ -11,7 +11,7 @@
             <Grid.Background>
                 <ImageBrush ImageSource="/pexels-adrien-olichon-2387819.jpg"/>
             </Grid.Background>
-            <Grid Margin="0,0,0,371" Background="Black">
+            <Grid Margin="0,0,10,371" Background="Black">
                 <Button x:Name="button" Content="Regisztráció" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="43" Width="85" BorderBrush="#FF707070" Background="#FFFF9900" FontWeight="Bold" Click="button_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
@@ -33,7 +33,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button x:Name="button3" Content="Fiók" HorizontalAlignment="Left" Margin="505,0,0,0" VerticalAlignment="Center" Height="43" Width="85" FontWeight="Bold" Background="#FFFF9900">
+                <Button x:Name="button3" Content="Fiók" HorizontalAlignment="Left" Margin="495,18,0,18" VerticalAlignment="Center" Height="43" Width="85" FontWeight="Bold" Background="#FFFF9900">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="15"/>

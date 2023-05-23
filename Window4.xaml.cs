@@ -22,6 +22,8 @@ namespace tolto
         public Window4()
         {
             InitializeComponent();
+            grid2.Visibility = Visibility.Hidden;
+            grid3.Visibility = Visibility.Hidden;
         }
 
         private void next_Click(object sender, RoutedEventArgs e)
@@ -30,6 +32,30 @@ namespace tolto
             {
                 grid1.Visibility = Visibility.Hidden;
                 grid2.Visibility = Visibility.Visible;
+                grid3.Visibility = Visibility.Hidden;
+            }
+            else if (grid2.Visibility == Visibility.Visible)
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Hidden;
+                grid3.Visibility = Visibility.Visible;
+            }
+            
+        }
+
+        private void prev_Click(object sender, RoutedEventArgs e)
+        {
+            if (grid2.Visibility == Visibility.Visible)
+            {
+                grid1.Visibility = Visibility.Visible;
+                grid2.Visibility = Visibility.Hidden;
+                grid3.Visibility = Visibility.Hidden;
+            }
+            else if (grid3.Visibility == Visibility.Visible)
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Visible;
+                grid3.Visibility = Visibility.Hidden;
             }
         }
     }

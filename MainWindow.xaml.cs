@@ -42,5 +42,6 @@ namespace tolto
             Window2 beje = new Window2();
             beje.Show();
         }
+
     }
 }

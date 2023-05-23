@@ -23,5 +23,11 @@ namespace tolto
         {
             InitializeComponent();
         }
+
+        private void tipus_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 infok = new Window4();
+            infok.Show();
+        }
     }
 }

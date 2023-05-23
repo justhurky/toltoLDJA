@@ -19,7 +19,7 @@
             </Label.Resources>
         </Label>
         <Grid HorizontalAlignment="Left" Height="44" Margin="131,221,0,0" VerticalAlignment="Top" Width="147">
-            <Button x:Name="tipus" Content="Töltő típusok" HorizontalAlignment="Left" Margin="53,0,0,0" VerticalAlignment="Top" Width="92" Background="#FFFF9900" FontWeight="Bold" Height="38">
+            <Button x:Name="tipus" Content="Töltő típusok" HorizontalAlignment="Left" Margin="53,0,0,0" VerticalAlignment="Top" Width="92" Background="#FFFF9900" FontWeight="Bold" Height="38" Click="tipus_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="15"/>

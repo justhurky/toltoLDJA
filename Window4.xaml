@@ -19,7 +19,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="prev" Content="Előző" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="81" Height="31" Background="#FFFF9900" FontWeight="Bold">
+        <Button x:Name="prev" Content="Előző" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="81" Height="31" Background="#FFFF9900" FontWeight="Bold" Click="prev_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>

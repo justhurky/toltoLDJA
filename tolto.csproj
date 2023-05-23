@@ -152,5 +152,8 @@
   <ItemGroup>
     <Resource Include="full-shot-man-charging-electric-car.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ABB-DCFast.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

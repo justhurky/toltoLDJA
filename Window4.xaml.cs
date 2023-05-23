@@ -23,5 +23,14 @@ namespace tolto
         {
             InitializeComponent();
         }
+
+        private void next_Click(object sender, RoutedEventArgs e)
+        {
+            if (grid1.Visibility == Visibility.Visible)
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Visible;
+            }
+        }
     }
 }

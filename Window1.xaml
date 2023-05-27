@@ -21,7 +21,7 @@
             <Label x:Name="label_Copy2" Content="E-mail:" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFFF9900" FontWeight="Bold" Height="31" Width="115" FontSize="14" Margin="0,36,0,0"/>
             <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="115,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Height="31"/>
         </Grid>
-        <Button x:Name="button" Content="Regisztráció" HorizontalAlignment="Center" VerticalAlignment="Top" Height="45" Width="134" Background="#FFFF9900" FontWeight="Bold" Margin="0,230,0,0">
+        <Button x:Name="button" Content="Regisztráció" HorizontalAlignment="Center" VerticalAlignment="Top" Height="45" Width="134" Background="#FFFF9900" FontWeight="Bold" Margin="0,230,0,0" Click="button_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="15"/>

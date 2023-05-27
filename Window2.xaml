@@ -24,7 +24,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="button1" Content="Nincs fiókja? Regisztráljon egyet!" HorizontalAlignment="Center" Margin="0,252,0,0" VerticalAlignment="Top" Height="46" Width="206" Background="#FFFF9900" FontWeight="Bold">
+        <Button x:Name="button1" Content="Nincs fiókja? Regisztráljon egyet!" HorizontalAlignment="Center" Margin="0,252,0,0" VerticalAlignment="Top" Height="46" Width="206" Background="#FFFF9900" FontWeight="Bold" Click="button1_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="15"/>

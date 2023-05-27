@@ -23,5 +23,11 @@ namespace tolto
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 reg= new Window1();
+            reg.Show();
+        }
     }
 }

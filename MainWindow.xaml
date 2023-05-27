@@ -33,7 +33,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button x:Name="button3" Content="Fiók" HorizontalAlignment="Left" Margin="495,18,0,18" VerticalAlignment="Center" Height="43" Width="85" FontWeight="Bold" Background="#FFFF9900">
+                <Button x:Name="button3" Content="Fiók" HorizontalAlignment="Left" Margin="495,18,0,18" VerticalAlignment="Center" Height="43" Width="85" FontWeight="Bold" Background="#FFFF9900" Click="button3_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="15"/>
@@ -44,22 +44,22 @@
             </Grid>
             <Image x:Name="image" HorizontalAlignment="Center" Height="303" Margin="0,99,0,0" VerticalAlignment="Top" Width="428" Source="/terkep.png"/>
 
-            <Button x:Name="button4" Content="" HorizontalAlignment="Left" Margin="215,114,0,0" VerticalAlignment="Top" Height="35" BorderBrush="{x:Null}" Width="35">
+            <Button x:Name="button4" Content="" HorizontalAlignment="Left" Margin="215,114,0,0" VerticalAlignment="Top" Height="35" BorderBrush="{x:Null}" Width="35" Click="button4_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ping.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="button5" Content="" HorizontalAlignment="Left" Margin="280,137,0,0" VerticalAlignment="Top" Height="35" BorderBrush="{x:Null}" Width="35">
+            <Button x:Name="button5" Content="" HorizontalAlignment="Left" Margin="280,137,0,0" VerticalAlignment="Top" Height="35" BorderBrush="{x:Null}" Width="35" Click="button5_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ping.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="button6" Content="" HorizontalAlignment="Left" Margin="305,304,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="35" Height="35">
+            <Button x:Name="button6" Content="" HorizontalAlignment="Left" Margin="305,304,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="35" Height="35" Click="button6_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ping.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="button7" Content="" HorizontalAlignment="Left" Margin="198,184,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="34" Height="35">
+            <Button x:Name="button7" Content="" HorizontalAlignment="Left" Margin="186,184,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Width="34" Height="35" Click="button7_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ping.png"/>
                 </Button.Background>

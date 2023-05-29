@@ -45,7 +45,9 @@ namespace tolto
                 MessageBox.Show("A felhasználónév vagy email foglalt!");
                 return;
             }
-            string encryptedPassword = Pass(password);
+            byte[] data = System.Text.Encoding.ASCII.GetBytes(inputString);
+            data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+            String hash = System.Text.Encoding.ASCII.GetString(data);
         }
 
         private bool IsEmailTaken(string text)

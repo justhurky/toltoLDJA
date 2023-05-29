@@ -17,7 +17,7 @@
             <Label x:Name="label_Copy" Content="Jelszó:" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFFF9900" FontWeight="Bold" Height="31" Width="115" FontSize="14" Margin="0,47,0,0"/>
             <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="115,47,0,0" VerticalAlignment="Top" Width="215" Height="31"/>
         </Grid>
-        <Button x:Name="button" Content="Bejelentkezés" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="135" Background="#FFFF9900" FontWeight="Bold">
+        <Button x:Name="button" Content="Bejelentkezés" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="135" Background="#FFFF9900" FontWeight="Bold" Click="button_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="15"/>

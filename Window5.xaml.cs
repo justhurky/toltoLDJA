@@ -19,9 +19,16 @@ namespace tolto
     /// </summary>
     public partial class Window5 : Window
     {
+        private string felhasznalonev;
+        private string email;
         public Window5()
         {
             InitializeComponent();
+            this.felhasznalonev = felhasznalonev;
+            this.email = email;
+
+            textBlock.Text = felhasznalonev;
+            textBlock1.Text = email;
 
         }
 

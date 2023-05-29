@@ -22,6 +22,12 @@ namespace tolto
         public Window5()
         {
             InitializeComponent();
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

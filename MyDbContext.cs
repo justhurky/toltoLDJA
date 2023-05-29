@@ -10,5 +10,10 @@ namespace tolto
         {
             throw new NotImplementedException();
         }
+
+        void IDisposable.Dispose()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

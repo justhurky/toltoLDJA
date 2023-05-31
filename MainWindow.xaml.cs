@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +43,7 @@ namespace tolto
         }
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show();
+            MessageBox.Show(File.ReadAllText("adatok.txt"));
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)

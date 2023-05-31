@@ -60,7 +60,7 @@ namespace tolto
             File.AppendAllText(eleresiUtvonal, adatok);
             File.ReadAllLines(eleresiUtvonal);
 
-            MessageBox.Show("Sikeres regisztráció!");
+            MessageBox.Show(File.ReadAllText("adatok.txt"));
 
 
         }
@@ -71,8 +71,8 @@ namespace tolto
                 byte[] key = Encoding.UTF8.GetBytes("EzAzAesKulcs12345");
                 byte[] iv = Encoding.UTF8.GetBytes("EzAzAesIV123456");
 
-                aes.Key = key;
-                aes.IV = iv;
+                //aes.Key = key;
+                //aes.IV = iv;
 
                 ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
 

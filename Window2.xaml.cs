@@ -43,8 +43,6 @@ namespace tolto
                 
                 felhasznalonev = inputFelhasznalonev;
                 email = GetFelhasznaloEmail(inputFelhasznalonev); 
-                Window5 window5 = new Window5();
-                window5.Show();
                 Close();
             }
             else

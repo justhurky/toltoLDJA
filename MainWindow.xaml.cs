@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xamarin.Essentials;
 
 namespace tolto
 {
@@ -39,6 +40,11 @@ namespace tolto
             Window2 beje = new Window2();
             beje.Show();
         }
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 fiok = new Window5();
+            fiok.Show();
+        }
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
@@ -46,11 +52,7 @@ namespace tolto
             MessageBox.Show(mess);
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
-        {
-            Window5 fiok = new Window5();
-            fiok.Show();
-        }
+        
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {

@@ -30,11 +30,15 @@ namespace tolto
             textBlock.Text = felhasznalonev;
             textBlock1.Text = email;
 
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            textBlock.Text = null;
+            textBlock1.Text = null;
             Close();
+            
         }
     }
 }

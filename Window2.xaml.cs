@@ -19,8 +19,7 @@ namespace tolto
     /// </summary>
     public partial class Window2 : Window
     {
-        private string felhasznalonev;
-        private string email;
+        
         public Window2()
         {
             InitializeComponent();
@@ -29,24 +28,22 @@ namespace tolto
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Window1 reg= new Window1();
+            Window1 reg = new Window1();
             reg.Show();
         }
+        public string felhasznalonev;
+        public string email;
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             string inputFelhasznalonev = textBox.Text;
             string inputJelszo = passwordBox.Password;
-
-            // Ellenőrizd a felhasználónév és jelszó helyességét
             if (EllenorizHelyesBejelentkezes(inputFelhasznalonev, inputJelszo))
             {
-                // Ha a bejelentkezés helyes, elmentjük a felhasználó adatait
+                
                 felhasznalonev = inputFelhasznalonev;
-                email = GetFelhasznaloEmail(inputFelhasznalonev); // Függvény, amely visszaadja a felhasználó e-mail címét
-
-                // Az előzőleg megadott oldalra való navigáció
-                Window5 window5 = new Window5(felhasznalonev, email);
+                email = GetFelhasznaloEmail(inputFelhasznalonev); 
+                Window5 window5 = new Window5();
                 window5.Show();
                 Close();
             }
@@ -58,14 +55,7 @@ namespace tolto
         }
         private bool EllenorizHelyesBejelentkezes(string felhasznalonev, string jelszo)
         {
-            // Ellenőrizd a felhasználónév és jelszó helyességét
-            // Például: adatbázis lekérdezés vagy más ellenőrzési mechanizmus használata
-            // Visszatérési érték a helyes bejelentkezés true/false értéke
-
-            // Ide írd a saját ellenőrzési logikádat
-            // Példa:
-
-            if (felhasznalonev == "admin" && jelszo == "password")
+            if (felhasznalonev == textBox.Text && jelszo == passwordBox.Password)
             {
                 return true;
             }
@@ -77,16 +67,9 @@ namespace tolto
 
         private string GetFelhasznaloEmail(string felhasznalonev)
         {
-            // Az adott felhasználóhoz tartozó e-mail cím lekérdezése az adatbázisból vagy más forrásból
-            // Például: adatbázis lekérdezés vagy más adatforrás használata
-            // Visszatérési érték a felhasználó e-mail címe
-
-            // Ide írd a saját e-mail cím lekérdezési logikádat
-            // Példa:
-
-            if (felhasznalonev == "admin")
+            if (felhasznalonev == textBox.Text)
             {
-                return "admin@example.com";
+                return email;
             }
             else
             {

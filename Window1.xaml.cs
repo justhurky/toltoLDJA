@@ -58,6 +58,7 @@ namespace tolto
 
             string eleresiUtvonal = "adatok.txt";
             File.AppendAllText(eleresiUtvonal, adatok);
+            File.ReadAllLines(eleresiUtvonal);
 
             MessageBox.Show("Sikeres regisztráció!");
 
